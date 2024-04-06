@@ -1,15 +1,14 @@
 import { defineConfig } from "vitepress";
 
-// https://vitepress.dev/reference/site-config
 export default defineConfig({
   title: "Final Form*",
   description: "A VitePress Site",
   themeConfig: {
-    logo: "../logo.jpg",
-    // https://vitepress.dev/reference/default-theme-config
+    logo: "/G2.jpg",
     nav: [
-      { text: "Home", link: "/" },
-      { text: "Examples", link: "/markdown-examples" },
+      { text: "首页", link: "/" },
+      { text: "前端", link: "/frontend" },
+      { text: '计算机基础', link: '/cs'},
     ],
 
     sidebar: [
@@ -25,5 +24,14 @@ export default defineConfig({
     socialLinks: [
       { icon: "github", link: "https://github.com/vuejs/vitepress" },
     ],
+
+    footer: {
+      message: 'Released under the MIT License.',
+      copyright: 'Copyright © 2019-present Evan You'
+    },
+
+    search: {
+      provider: 'local',
+    },
   },
 });
