@@ -6,7 +6,7 @@ hero:
   text: "技术博客"
   tagline: 星与山与泽
   image:
-    src: /logo.jpg
+    src: /logo.png
     alt: vitePress
   actions:
     - theme: brand
