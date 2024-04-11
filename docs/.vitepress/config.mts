@@ -1,6 +1,7 @@
 import { defineConfig } from "vitepress";
 import frontItems from "./frontend.mjs";
 import csItems from "./cs.mjs";
+import exampleItems from './example.mjs';
 
 export default defineConfig({
   title: "Final Form*",
@@ -12,6 +13,7 @@ export default defineConfig({
       { text: "首页", link: "/" },
       { text: "前端", items: [{ text: "前端", items: frontItems }] },
       { text: "计算机基础", items: [{ text: "计算机基础", items: csItems }] },
+      { text: "示例", items: [{ text: "示例", items: exampleItems }] },
     ],
 
     sidebar: {
@@ -31,6 +33,14 @@ export default defineConfig({
             { text: "hooks", link: "/react/" },
             { text: "自定义hook", link: "/react/hook" },
           ],
+        }
+      ],
+      '/webpack': [
+        { 
+          text: "Webpack", 
+          items: [
+            { text: '' }
+          ]
         }
       ]
     },
