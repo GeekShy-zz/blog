@@ -19,10 +19,15 @@ export default defineConfig({
     sidebar: {
       '/es6': [
         {
-          text: "ES6+",
+          text: "JavaScript",
           items: [
-            { text: "异步处理", link: "/es6/" },
-            { text: "迭代器与生成器", link: "/es6/generator" },
+            { text: "学习记录", link: "/es6/" },
+            { text: "数据类型", link: "/es6/数据类型" },
+            { text: "js加法运算法则", link: "/es6/加法运算法则" },
+            { text: "赋值运算符", link: "/es6/赋值运算符" },
+            { text: "对象遍历属性", link: "/es6/对象遍历属性" },
+            { text: "位运算应用", link: "/es6/位运算应用" },
+            { text: "判等运算符", link: "/es6/判等运算符" },
           ],
         }
       ],
@@ -42,7 +47,15 @@ export default defineConfig({
             { text: '' }
           ]
         }
-      ]
+      ],
+      '/algorithm': [
+        { 
+          text: "算法", 
+          items: [
+            { text: '数组求和', link: '/algorithm/index' }
+          ]
+        }
+      ],
     },
 
     socialLinks: [

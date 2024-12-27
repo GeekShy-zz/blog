@@ -1,3 +1,9 @@
-### 时间复杂度
-时间复杂度T(n)按数量级递增顺序为
-O(1) < O(logn) < O(n) < O(nlogn) < O(n²) < O(2<sup>n</sup>)
+#### 不使用循环，求一个数组所有元素的和
+
+```js
+const nums = [5,1,3,2,4];
+function f(i) {
+  return i >= nums.length ? 0 : nums[i] + f(i + 1)
+}
+f(0)
+```
